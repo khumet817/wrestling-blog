@@ -1,0 +1,20 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "date": "",
+            "title": "",
+            "image": "url",
+            "description": "",
+            "author": "Tabile Khume"
+        },
+        {
+            "id": 2,
+            "date": "",
+            "title": "",
+            "image": "url",
+            "description": "",
+            "author": "Tabile Khume"
+        }
+    ]
+}
