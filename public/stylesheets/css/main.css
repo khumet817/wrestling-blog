@@ -1,0 +1,10 @@
+body {
+  margin: 0 auto; }
+
+.hero-home {
+  background: url(/images/finn-balor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh; }
+
+/*# sourceMappingURL=main.css.map */
