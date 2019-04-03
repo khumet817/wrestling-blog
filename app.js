@@ -4,8 +4,23 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Instead of repeating myself
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+// var createRouter = require('./routes/create');
+// var viewRouter = require('./routes/view');
+// var updateRouter = require('./routes/update');
+// var deleteRouter = require('./routes/delete');
+
+// var routes = [
+//   require('./routes/index'),
+//   require('./routes/users'),
+//   require('./routes/create'),
+//   require('./routes/view'),
+//   require('./routes/update'),
+//   require('./routes/delete'),
+// ]
 
 var app = express();
 
@@ -20,7 +35,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', usersRouter);
+// app.use('/', routes[0]);
+// app.use('/users', routes[1]);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -39,3 +56,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+// app listen on this port
+app.listen(8080);
