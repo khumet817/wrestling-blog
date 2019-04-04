@@ -2,19 +2,20 @@
     "posts": [
         {
             "id": 1,
-            "date": "",
-            "title": "",
-            "image": "url",
-            "description": "",
+            "date": "1 day ago",
+            "title": "WrestleMania Weekend",
+            "image": "https://biggoldbeltgroup.com/wp-content/uploads/2018/12/get-tickets-for-wrestlemania-weeks-raw-smackdown-live-and-nxt-takeover-tomorrow-at-10-a-m.jpg",
+            "description": "This year's WrestleMania weekend is highlighted by shows from the usual promotions who have joined in on the festivities over the past few years, with the added bonus this year of New Japan Pro-Wrestling and Ring of Honor teaming up to take over the traditional WWE home of Madison Square Garden -- which is a bold move on such a weekend, to say the least.",
             "author": "Tabile Khume"
-        },
+        }
+    ],
+
+    "users": [
         {
-            "id": 2,
-            "date": "",
-            "title": "",
-            "image": "url",
-            "description": "",
-            "author": "Tabile Khume"
+            "id": 1,
+            "username": "darkie17",
+            "email": "tabilekhume17@gmail.com",
+            "password": "nankutatakho"
         }
     ]
 }

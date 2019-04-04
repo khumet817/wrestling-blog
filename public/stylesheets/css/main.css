@@ -12,18 +12,10 @@ body {
   position: absolute;
   right: 10vw; }
 
-.hero-home {
+.homeCover {
   background: url();
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: auto; }
-
-.title {
-  background: #ffffff9c;
-  color: #007bff;
-  opacity: 1;
-  height: 90vh;
-  padding: 230px 30px; }
+  background-size: cover;
+  height: 95vh; }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,21 +5,9 @@
 }
 
 // Hero Section Styles
-.hero-home {
+.homeCover {
     background: url();
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: auto;
-}
-
-.title {
-    background: #ffffff9c;
-    color: #007bff;
-    opacity: 1;
-    height: 90vh;
-    // text-align: -webkit-center;
-    padding: 230px 30px;
-    // width: 50%;
-    // transform: translate(10%, 70%);
+    background-size: cover;
+    height: 95vh;
 }

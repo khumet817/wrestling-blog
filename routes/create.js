@@ -66,5 +66,6 @@ router.post('/', function (req, res, nect) {
     })
     //  redirect to homepage after your create post
     res.redirect('..');
-    module.exports = router;
 })
+
+module.exports = router;
