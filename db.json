@@ -5,8 +5,25 @@
             "date": "1 day ago",
             "title": "WrestleMania Weekend",
             "image": "https://biggoldbeltgroup.com/wp-content/uploads/2018/12/get-tickets-for-wrestlemania-weeks-raw-smackdown-live-and-nxt-takeover-tomorrow-at-10-a-m.jpg",
-            "description": "This year's WrestleMania weekend is highlighted by shows from the usual promotions who have joined in on the festivities over the past few years, with the added bonus this year of New Japan Pro-Wrestling and Ring of Honor teaming up to take over the traditional WWE home of Madison Square Garden -- which is a bold move on such a weekend, to say the least.",
+            "description": "Don't miss all the live WWE action featuring your favorite Superstars from Raw, SmackDown, NXT and 205 Live. WWE Superstarts like Roman Reigns, Charlotte Flair, Ronda Rousey, Braun Strowman, Kofi Kingston, Daniel Bryan and The Man, Becky Lynch. Check out all the upcoming shows NXT TakeOver New York and WWE Hall Of Fame Brooklyn.",
+            "author": "WWE & Tabile Khume"
+        },
+
+        {
+            "id": 2,
+            "date": "12 hours ago",
+            "title": "Support WrestleTalk",
+            "image": "https://static.wrestletalk.com/app/uploads/2019/03/WM-WEEKEND-GUIDE-2.jpg",
+            "description": "WrestleMania weekend 2019 is filled with back to back big time shows from Thursday onto the following Tuesday. The added bonus this year of New Japan Pro-Wrestling and Ring of Honor teaming up to take over the traditional WWE home of Madison Square Garden. Support WrestleTalk and stay updated on every wrestling",
             "author": "Tabile Khume"
+        },
+
+        {
+            "id": 3,
+            "date": "30 mins ago",
+            "image": "https://cdn.sescoops.com/wp-content/uploads/2018/07/g1-supercard.jpg",
+            "description": "A historic night of wrestling action awaits on Saturday 6 April, as New Japan Pro Wrestling and Ring Of Honor bring their biggest and best to Madison Square Garden for the G1 Supercard. This show is a major deal. Tickets sold out less than an hour after going on sale, months before a single match had been announced.",
+            "author": "Andrew Murray"
         }
     ],
 
