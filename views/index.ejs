@@ -8,6 +8,7 @@
     <!-- Icon Library -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -64,19 +65,61 @@
     </nav>
   </header>
 
-  <!-- Main with thumbnails -->
+  <!-- Main with cover page and thumbnails -->
   <main role="main">
-
+    <!-- Cover Page -->
     <section class="jumbotron homeCover">
       <div class="container">
         <h1 class="jumbotron-heading">WrestleBlog</h1>
         <p class="lead text-muted">Get the latest news, rumours and prediction for your favourite wrestling promotion.</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Sign Up</a>
-          <a href="#" class="btn btn-secondary my-2">Log In</a>
+          <a href="/register" class="btn btn-primary my-2">Sign Up</a>
+          <a href="#" class="btn btn-secondary my-2" data-toggle="modal" data-target="#login">Log In</a>
         </p>
       </div>
     </section>
+
+    <!-- LOG IN MODAL -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please Fill In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- Username -->
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+              <!-- Password -->
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+
+              <!-- Radio -->
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember my password</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Log In</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="album py-5 bg-light">
       <div class="container">
@@ -93,8 +136,7 @@
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Read More <span class="lnr lnr-arrow-right"></span></button>
                   </div>
                   <small class="text-muted"><%= item.date %></small>
                 </div>

@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var users = require('../db.json');
-var request = require(request);
+var users = require('../db.json').users;
+var request = require('request');
 
-// Gettinh the register page
+// Getting the register page
 
 router.get('/', function (req, res, next) {
     res.render('register', {
