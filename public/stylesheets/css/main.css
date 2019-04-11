@@ -14,4 +14,9 @@ body {
   background-repeat: no-repeat;
   background-position-y: 45%; }
 
+.register-main {
+  background: black;
+  padding: 50px;
+  height: 93vh; }
+
 /*# sourceMappingURL=main.css.map */
