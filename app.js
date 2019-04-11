@@ -9,6 +9,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var registerRouter = require('./routes/register');
+// var signInRouter = require('./routes/sign-in');
 // var createRouter = require('./routes/create');
 // var viewRouter = require('./routes/view');
 // var updateRouter = require('./routes/update');
@@ -38,6 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/register', registerRouter);
+// app.use('/sign-in', signInRouter);
 // app.use('/', routes[0]);
 // app.use('/users', routes[1]);
 

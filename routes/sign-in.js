@@ -8,7 +8,7 @@ var request = require(request);
 
 router.get('/', function (req, res, next) {
     res.render('sign-in', {
-        title: 'sig-in',
+        title: 'sign-in',
         signInError: req.app.locals.signError,
     });
 });
