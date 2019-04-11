@@ -1,13 +1,7 @@
-// Nav Bar
-.nav-list {
-    position: absolute;
-    right: 10vw;    
-}
-
-// Hero Section Styles
-.homeCover {
-    background: url();
-    background-repeat: no-repeat;
+// Header Styles
+.hero-cover {
+    background: url(/images/undertaker.jpg);
     background-size: cover;
-    height: 95vh;
+    background-repeat: no-repeat;
+    background-position-y: 45%;
 }

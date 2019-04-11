@@ -8,14 +8,10 @@ body {
     background: white;
     color: black; }
 
-.nav-list {
-  position: absolute;
-  right: 10vw; }
-
-.homeCover {
-  background: url();
-  background-repeat: no-repeat;
+.hero-cover {
+  background: url(/images/undertaker.jpg);
   background-size: cover;
-  height: 95vh; }
+  background-repeat: no-repeat;
+  background-position-y: 45%; }
 
 /*# sourceMappingURL=main.css.map */

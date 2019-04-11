@@ -10,164 +10,65 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </head>
-  <body>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
 <body>
-  <!-- Header with Nav -->
-  <header>
-    <!-- Collapsed Info in NavBar -->
-    <section class="bg-dark collapse" id="navbarHeader">
-      <section class="container">
-        <section class="row">
-          <section class="col-sm-8 col-md-7 py-4">
-            <h4 class="text-white">About</h4>
-
-            <!-- Text about what our blog is about -->
-            <p class="text-muted">
-              Our blog seeks to provide valid information to the user and make sure that you are kept up to date with the latest news, rumours and predictions whether it be from WWE, NJPW, ROH, AEW or Impact Wrestling. You can add or edit our posts. We are a community after all, what kind of community denies its own access to edit or add content. Enjoy our blog.
-            </p>
-          </section>
-          
-          <!-- Contact Us Section -->
-          <section class="col-sm-4 offset-md-1 py-4">
-            <h4 class="text-white">Contact Us</h4>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Follow us on Twitter</a></li>
-              <li><a href="#" class="text-white">Like us on Facebook</a></li>
-              <li><a href="#" class="text-white">Email us</a></li>
-            </ul>
-          </section>
-        </section>
-      </section>
-    </section>
-
-    <!-- NavBar with Burger button -->
-    <nav class="navbar navbar-dark bg-dark shadow-sm">
-      <section class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <strong>WrestleBlog</strong>
+  <!-- NavBar with logo -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="">
+        <img src="/images/wrestletank-logo_c99f229c-3fb8-43b8-8fd8-50b6c6d091ef_750x.png" alt="" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
         </a>
+  
+        <a class="navbar-item">
+          Recent Blog Posts
+        </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="/register" class="button is-link">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light" data-target="modal-ter" aria-haspopup="true">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader"
-          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </section>
-    </nav>
-  </header>
-
-  <!-- Main with cover page and thumbnails -->
-  <main role="main">
-    <!-- Cover Page -->
-    <section class="jumbotron homeCover">
+  <!-- Header with title -->
+  <header class="hero is-link is-fullheight-with-navbar">
+    <div class="hero-body hero-cover">
       <div class="container">
-        <h1 class="jumbotron-heading">WrestleBlog</h1>
-        <p class="lead text-muted">Get the latest news, rumours and prediction for your favourite wrestling promotion.</p>
-        <p>
-          <a href="/register" class="btn btn-primary my-2">Sign Up</a>
-          <a href="#" class="btn btn-secondary my-2" data-toggle="modal" data-target="#login">Log In</a>
+        <p class="title">
+          Support WrestleBlog
+        </p>
+
+        <p class="subtitle">
+          Keep yourself updated with the latest wrestling news, rumours and predictions.
         </p>
       </div>
-    </section>
-
-    <!-- LOG IN MODAL -->
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Please Fill In</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <!-- Username -->
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-
-              <!-- Password -->
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-
-              <!-- Radio -->
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Remember my password</label>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Log In</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-
-          <% blog.posts.forEach(function(item) { %>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="<%= item.image %>" alt="" class="card-img-top" width="100%" height="225">
-              <div class="card-body">
-                <p class="card-text">
-                  <%= item.description %>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Read More <span class="lnr lnr-arrow-right"></span></button>
-                  </div>
-                  <small class="text-muted"><%= item.date %></small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <% }) %>
-
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-right">
-        <a href="#">Back to top</a>
-      </p>
-      <p>Are you new to our site and like what you see? <a href="#">Sign Up</a> or if you're already registered but don't know how you landed here, just <a
-          href="#">Log In</a> here.</p>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
-    crossorigin="anonymous"></script>
-
+  </header>
 </body>
-  </body>
 </html>
