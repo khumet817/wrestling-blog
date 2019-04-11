@@ -1,0 +1,39 @@
+// Responsive Design
+@media screen and (max-width:1024px) {
+    // =======
+    // LAPTOP
+    // =======
+
+    // Header Styles
+    .hero-cover {
+        background-position-y: 30%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    // =======
+    // TABLET
+    // =======
+
+    // Header Styles
+    .hero-cover {
+        background: url(/images/NJPW-Kenny-Omega-2.jpg);
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:425px) {
+    // ==============
+    // MOBILE - LARGE
+    // ==============
+
+    // Header Styles
+    .hero-cover {
+        background: url(/images/cm-punk.jpg);
+        background-position-x: 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

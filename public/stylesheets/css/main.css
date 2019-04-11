@@ -19,4 +19,20 @@ body {
   padding: 50px;
   height: 93vh; }
 
+@media screen and (max-width: 1024px) {
+  .hero-cover {
+    background-position-y: 30%; } }
+@media screen and (max-width: 768px) {
+  .hero-cover {
+    background: url(/images/NJPW-Kenny-Omega-2.jpg);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+@media screen and (max-width: 425px) {
+  .hero-cover {
+    background: url(/images/cm-punk.jpg);
+    background-position-x: 30%;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
 /*# sourceMappingURL=main.css.map */
